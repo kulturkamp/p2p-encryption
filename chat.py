@@ -149,8 +149,8 @@ class ChatApp(npyscreen.NPSAppManaged):
         filename = filename[0]
         if self.chatClient.isConnected:
             try:
-                sz = os.stat(filename).st_size
-                self.sysMsg(f'Trying to send {sz} file.')
+                # sz = os.stat(filename).st_size
+                # self.sysMsg(f'Trying to send {sz} file.')
                 with open(filename, 'rb') as f:
                     bts = f.read()
             except FileNotFoundError as e:

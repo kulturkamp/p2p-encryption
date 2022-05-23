@@ -41,7 +41,7 @@ class Client(threading.Thread):
     def send(self, msg):
         if msg != '':
             try:
-                self.socket.send(b' '.join(msg))                
+                self.socket.sendall(b' '.join(msg))                
                 return True
             except socket.error as e:
                 self.chatApp.sysMsg('Could not send data to peer. Disconnecting socket...')
