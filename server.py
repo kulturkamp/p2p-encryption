@@ -1,7 +1,7 @@
 import socket
 import threading
 import time
-from api import serialize_tuple, deserialize_tuple
+from api import deserialize_tuple
 import logging
 
 # server (and client) are from Thread for simultaneous work

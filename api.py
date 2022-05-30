@@ -1,4 +1,3 @@
-import logging
 from crypto.RSA import RSA, oaep_unpad
 from crypto.AES import AES, get_iv
 from crypto.sha256 import sha256
